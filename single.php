@@ -1,4 +1,4 @@
-<?php get_template_part( 'templates/head' ); ?>
+<?php get_template_part( 'templates/core/head' ); ?>
 
 <article class="content">
 
@@ -25,4 +25,4 @@
 
 </article>
 
-<?php get_template_part( 'templates/footer' ); ?>
+<?php get_template_part( 'templates/core/footer' ); ?>

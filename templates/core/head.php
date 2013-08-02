@@ -11,4 +11,4 @@
 
 <body <?php body_class(); ?>>
 
-  <?php get_template_part( 'templates/header' ); ?>
+  <?php get_template_part( 'templates/core/header' ); ?>

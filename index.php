@@ -1,4 +1,4 @@
-<?php get_template_part( 'templates/head'); ?>
+<?php get_template_part( 'templates/core/head'); ?>
 
 
 <?php
@@ -14,7 +14,9 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 </div>
 
 <?php endwhile; else: ?>
-<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+<div class="content">
+  <p class="post"><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+</div>
 <?php endif; ?>
 
-<?php get_template_part( 'templates/footer' ); ?>
+<?php get_template_part( 'templates/core/footer' ); ?>

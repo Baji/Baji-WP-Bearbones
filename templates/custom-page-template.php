@@ -1,4 +1,9 @@
-<?php get_template_part( 'templates/core/head' ); ?>
+<?php
+/*
+Template Name: Custom Page Template
+*/
+
+get_template_part( 'templates/core/head' ); ?>
 
 <article class="content">
 
