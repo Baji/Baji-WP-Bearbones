@@ -1,6 +1,6 @@
 <?php get_template_part( 'templates/core/head' ); ?>
 
-<article class="content">
+<article class="row">
 
   <?php the_post(); ?>
   

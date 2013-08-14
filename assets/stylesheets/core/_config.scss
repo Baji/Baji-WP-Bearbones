@@ -1,0 +1,41 @@
+// Typography
+///////////////////////////////////////////////////////////////////////////////
+$sans-serif-header: 'Montserrat', sans-serif;
+$sans-serif-body: 'Lato', sans-serif;
+$serif: $georgia;
+
+$base-font-family: $sans-serif-body;
+$header-font-family: $sans-serif-header;
+
+// Sizes
+///////////////////////////////////////////////////////////////////////////////
+$base-scale: 1.5;
+$base-font-size: 1em;
+$base-line-height: $base-font-size * $base-scale;
+$base-border-radius: 3px;
+
+// Colors
+///////////////////////////////////////////////////////////////////////////////
+$ancc-blue: #9bb4ba;
+$ancc-dark-gray: #231f20;
+$ancc-medium-gray: #808285;
+$ancc-light-gray: #DDD;
+$ancc-light-red: #FBE3E4;
+$ancc-light-yellow: #FFF6BF;
+$ancc-light-green: #E6EFC2;
+
+//  Font Colors
+$base-font-color: $ancc-dark-gray;
+$base-accent-color: $ancc-blue;
+
+//  Text Link Colors
+$base-link-color: $base-accent-color;
+$hover-link-color: darken($base-accent-color, 15%);
+
+// Border color
+$base-border-color: $ancc-light-gray;
+
+// Flash Colors
+$error-color: $ancc-light-red;
+$notice-color: $ancc-light-yellow;
+$success-color: $ancc-light-green;

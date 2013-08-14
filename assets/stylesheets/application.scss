@@ -1,10 +1,21 @@
 // This is a manifest file that will be compiled to include all the files listed below.
 
-// Needs to load first
-@import "core/base";
+// load bourbon framework, It's sexy... so use it!
+@import "bourbon";
+
+// Framework Grid (uses Bourbon Neat)
+@import "grid/grid";
+
+// load in variables/mixins
+@import "core/config";
+@import "core/mixins";
 
 // Primary styles
-@import "components/header";
-@import "components/footer";
+@import "core/base";
+
+// Modules
+@import "modules/topbar";
+@import "modules/header";
+@import "modules/hero";
 
 // vendor

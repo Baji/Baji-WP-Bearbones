@@ -1,0 +1,61 @@
+// import grid settings
+@import "grid-settings";
+
+// import Neat
+@import "neat/neat";
+
+// setup clearfix placeholder
+%cf {
+  @include clearfix;
+}
+
+
+// Base Grid
+.row {
+	@include outer-container;
+	@extend .cf;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+// Columns
+.col-one		{ @include span-columns(1); }
+.col-two		{ @include span-columns(2); }
+.col-three		{ @include span-columns(3); }
+.col-four		{ @include span-columns(4); }
+.col-five		{ @include span-columns(5); }
+.col-six		{ @include span-columns(6); }
+.col-seven		{ @include span-columns(7); }
+.col-eight		{ @include span-columns(8); }
+.col-nine		{ @include span-columns(9); }
+.col-ten		{ @include span-columns(10); }
+.col-eleven		{ @include span-columns(11); }
+.col-full		{ @include span-columns(12); }
+
+
+// Nested Columns - This is an example if you need to nest columns
+// .col-six {
+// 	.col-one {
+// 		@include span-columns(1 of 6);
+// 	}
+// }
+
+
+// grid utilities
+.right {
+	float: right;
+}
+
+
+// media queries
+.row {
+	@include media($small) {
+		@include outer-container;
+	}
+}
+
+.col-one, .col-two, .col-three, .col-four, .col-five, .col-six, .col-seven, .col-eight, .col-nine, .col-ten, .col-eleven, .col-full {
+	@include media($small) {
+		@include span-columns(2);
+	}
+}

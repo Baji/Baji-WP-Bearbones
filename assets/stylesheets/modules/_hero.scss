@@ -1,0 +1,24 @@
+%hero {
+	@extend .cf;
+	width: 100%;
+}
+
+
+.hero {
+	max-width: em(1200);
+	height: em(420);
+	position: relative;
+	padding: 12% 0;
+}
+
+.hero-title {
+	color: white;
+	text-transform: none;
+	text-align: center;
+	margin:  0 auto;
+	width: 100%;
+	font-size: em(50);
+	position: relative;
+	z-index: 2;
+	text-shadow: 0 2px 4px rgba(0,0,0, .25);
+}

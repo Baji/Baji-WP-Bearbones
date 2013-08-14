@@ -1,0 +1,39 @@
+// import neat settings
+@import "neat/neat-helpers";
+
+// Change the grid settings
+$column: 50px;
+$gutter: 30px;
+$grid-columns: 12;
+$max-width: em(960);
+
+
+// Want a visual grid? 
+$visual-grid: false;
+$visual-grid-color: red;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.05;
+
+// grid breakpoints and queries
+
+/**************************
+	Screen sizes
+***************************/
+$small: new-breakpoint(max-width 420px 2);
+$medium: new-breakpoint(min-width 421px max-width 767px 4);
+$large: new-breakpoint(min-width 768px max-width 1024px 12);
+$xlarge: new-breakpoint(min-width 1025px 12);
+
+/**************************
+	Handheld Devices
+***************************/
+$mobile: new-breakpoint(max-device-width 420px 1);
+$mobile-retina: new-breakpoint(max-device-width 420px min-resolution 326dpi 1);
+$mobile-landscape: new-breakpoint(max-device-width 960px orientation landscape 1);
+
+/**************************
+	Tablets
+***************************/
+$tablet: new-breakpoint(min-device-width 768px max-device-width 1024px 4);
+$tablet-retina: new-breakpoint(max-device-width 1024px min-resolution 264dpi 4);
+$tablet-landscape: new-breakpoint(max-device-width 1024px orientation landscape 4);

@@ -1,3 +1,10 @@
+<!--
+ __    __  ______  __  __  ______       ______  ______  __      __  ______  ______  
+/\ "-./  \/\  __ \/\ \/ / /\  ___\     /\  == \/\  ___\/\ \    /\ \/\  ___\/\  ___\ 
+\ \ \-./\ \ \  __ \ \  _"-\ \  __\     \ \  __<\ \  __\\ \ \___\ \ \ \  __\\ \  __\ 
+ \ \_\ \ \_\ \_\ \_\ \_\ \_\ \_____\    \ \_____\ \_____\ \_____\ \_\ \_____\ \_\   
+  \/_/  \/_/\/_/\/_/\/_/\/_/\/_____/     \/_____/\/_____/\/_____/\/_/\/_____/\/_/             
+-->
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
   <head>
@@ -10,5 +17,7 @@
   </head>
 
 <body <?php body_class(); ?>>
+<?php get_template_part( 'templates/modules/topbar' ); ?>
 
-  <?php get_template_part( 'templates/core/header' ); ?>
+<div id="wrap" class="page-wrap">
+	<?php get_template_part( 'templates/modules/header' ); ?>

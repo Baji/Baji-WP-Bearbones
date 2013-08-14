@@ -1,4 +1,4 @@
-<footer class="content">
+<footer class="row">
   <p>By Make Belief in Seattle, Washington</p>
 </footer>
 
@@ -18,6 +18,7 @@
 </script>
 
     <?php wp_footer(); ?>
-
-  </body>
+    
+</div><!-- end #wrap -->
+</body>
 </html>

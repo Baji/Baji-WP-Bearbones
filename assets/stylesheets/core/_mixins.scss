@@ -1,0 +1,17 @@
+// basic utilities
+%srt {
+	text-indent: -9999em;
+}
+
+
+// hero container mixin
+@mixin button($bg: $light-gray, $color: white, $has-radius: false, $radius: 0) {
+	padding: $base-line-height / 2 $base-line-height;
+	background: $bg;
+	color: $color;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	@if $has-radius != false {
+		border-radius: $radius + px;
+	}
+}
